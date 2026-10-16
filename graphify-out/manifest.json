@@ -1,22 +1,4 @@
 {
-  ".opencode/skills/ui-ux-pro-max/scripts/core.py": {
-    "mtime": 1782121282.9306414,
-    "seen": 1787825129.8487635,
-    "ast_hash": "3df4734a785963a8242a56c1b926adfd",
-    "semantic_hash": "3df4734a785963a8242a56c1b926adfd"
-  },
-  ".opencode/skills/ui-ux-pro-max/scripts/design_system.py": {
-    "mtime": 1782121282.9315596,
-    "seen": 1787825129.8487635,
-    "ast_hash": "08f84d04608a19049c90fc2b1ef314f9",
-    "semantic_hash": "08f84d04608a19049c90fc2b1ef314f9"
-  },
-  ".opencode/skills/ui-ux-pro-max/scripts/search.py": {
-    "mtime": 1782121282.9315596,
-    "seen": 1787825129.8487635,
-    "ast_hash": "8c7e35426fe8f6f3ed91e9dce0ed7af1",
-    "semantic_hash": "8c7e35426fe8f6f3ed91e9dce0ed7af1"
-  },
   ".oxlintrc.json": {
     "mtime": 1787794534.1761265,
     "seen": 1787825129.8487635,
@@ -108,10 +90,10 @@
     "semantic_hash": "fc2d8f0a7a96f2989ef7e21fed740748"
   },
   "src/lib/config.js": {
-    "mtime": 1787825765.8219059,
-    "seen": 1787890816.48253,
-    "ast_hash": "5e6fa4e660249b2a42615b30f32b8cd2",
-    "semantic_hash": "5e6fa4e660249b2a42615b30f32b8cd2"
+    "mtime": 1792138843.0353158,
+    "seen": 1792138847.1546135,
+    "ast_hash": "95ecf8b81de80351d650add683bdbb99",
+    "semantic_hash": ""
   },
   "src/lib/gsap.js": {
     "mtime": 1787796533.542132,
@@ -137,12 +119,6 @@
     "ast_hash": "844f5af05f82be907aaa0ee656d7ae33",
     "semantic_hash": "844f5af05f82be907aaa0ee656d7ae33"
   },
-  ".opencode/skills/ui-ux-pro-max/SKILL.md": {
-    "mtime": 1787800148.5297015,
-    "seen": 1787825129.8487635,
-    "ast_hash": "e745b5a6c71379800b232a1ba32d16ec",
-    "semantic_hash": "e745b5a6c71379800b232a1ba32d16ec"
-  },
   "README.md": {
     "mtime": 1787794534.4678843,
     "seen": 1787825129.8487635,
@@ -155,233 +131,11 @@
     "ast_hash": "6d02396d964337f54f9f33a7a82c9974",
     "semantic_hash": "6d02396d964337f54f9f33a7a82c9974"
   },
-  "public/brand.html": {
-    "mtime": 1787818575.3525078,
-    "seen": 1787825129.8487635,
-    "ast_hash": "9f9a02eabc3c42baf78f893e017acfb9",
-    "semantic_hash": "9f9a02eabc3c42baf78f893e017acfb9"
-  },
-  "public/brand-bisnis/hijaz.png": {
-    "mtime": 1787906881.2754323,
-    "seen": 1787960281.309156,
-    "ast_hash": "c80ba4e648f7d3c46852121300a2667d",
-    "semantic_hash": "c80ba4e648f7d3c46852121300a2667d"
-  },
-  "public/brand-bisnis/kotagede-jewellery.png": {
-    "mtime": 1778557693.94193,
-    "seen": 1787825129.8487635,
-    "ast_hash": "feedd275eb6a053208560e4b4798fd7e",
-    "semantic_hash": "feedd275eb6a053208560e4b4798fd7e"
-  },
-  "public/brand-bisnis/lentera-bisnis-academy.png": {
-    "mtime": 1787960354.6649175,
-    "seen": 1788141500.5788853,
-    "ast_hash": "cfdd10b4609c142486afdbc929267566",
-    "semantic_hash": "cfdd10b4609c142486afdbc929267566"
-  },
-  "public/brand-bisnis/safar.png": {
-    "mtime": 1785211465.4796946,
-    "seen": 1787825129.8487635,
-    "ast_hash": "48f6959d25398669666ca18775fa53ad",
-    "semantic_hash": "48f6959d25398669666ca18775fa53ad"
-  },
-  "public/brand/abata-jogja.png": {
-    "mtime": 1787813912.0373952,
-    "seen": 1787825129.8487635,
-    "ast_hash": "e1e8d64a029b22f7164aad053196cf97",
-    "semantic_hash": "e1e8d64a029b22f7164aad053196cf97"
-  },
-  "public/brand/bagaskara-jaya-abadi.png": {
-    "mtime": 1787814199.1942863,
-    "seen": 1787825129.8487635,
-    "ast_hash": "ee485095ea294e25c29e9be4d3ea3649",
-    "semantic_hash": "ee485095ea294e25c29e9be4d3ea3649"
-  },
-  "public/brand/beanbag-sultan.png": {
-    "mtime": 1787813961.195536,
-    "seen": 1787825129.8487635,
-    "ast_hash": "28a196d53df7621d62d40264962b2aa3",
-    "semantic_hash": "28a196d53df7621d62d40264962b2aa3"
-  },
-  "public/brand/cawang-medical.png": {
-    "mtime": 1787814207.603813,
-    "seen": 1787825129.8487635,
-    "ast_hash": "5444d7fedcc8cd327b20784c26e93e77",
-    "semantic_hash": "5444d7fedcc8cd327b20784c26e93e77"
-  },
-  "public/brand/emblem.svg": {
-    "mtime": 1787817822.9022882,
-    "seen": 1787825129.8487635,
-    "ast_hash": "5dff353396324bde5caac613e37632a2",
-    "semantic_hash": "5dff353396324bde5caac613e37632a2"
-  },
-  "public/brand/gembala-kambing-jogja.png": {
-    "mtime": 1787814213.4335797,
-    "seen": 1787825129.8487635,
-    "ast_hash": "5136df927b96bb30f54eec470db06d4c",
-    "semantic_hash": "5136df927b96bb30f54eec470db06d4c"
-  },
-  "public/brand/herba-natura.png": {
-    "mtime": 1787811560.6629918,
-    "seen": 1787825129.8487635,
-    "ast_hash": "bbfcb122618980a59b7d390c8d5898d1",
-    "semantic_hash": "bbfcb122618980a59b7d390c8d5898d1"
-  },
-  "public/brand/kampung-inggris-solo.png": {
-    "mtime": 1787814223.5259762,
-    "seen": 1787825129.8487635,
-    "ast_hash": "4bc2c3dee03e4dbdbe70af5a3bdc7a89",
-    "semantic_hash": "4bc2c3dee03e4dbdbe70af5a3bdc7a89"
-  },
-  "public/brand/kanida.png": {
-    "mtime": 1787814491.420159,
-    "seen": 1787825129.8487635,
-    "ast_hash": "2223f38de8e3566f94f36a4046657765",
-    "semantic_hash": "2223f38de8e3566f94f36a4046657765"
-  },
-  "public/brand/lentera-medical.png": {
-    "mtime": 1787814333.729462,
-    "seen": 1787825129.8487635,
-    "ast_hash": "4ea8cf1a252574405c3bf9faa484aaed",
-    "semantic_hash": "4ea8cf1a252574405c3bf9faa484aaed"
-  },
-  "public/brand/little-jenna.png": {
-    "mtime": 1787814494.1538105,
-    "seen": 1787825129.8487635,
-    "ast_hash": "135a95ffcd558ca71782fccaa461f043",
-    "semantic_hash": "135a95ffcd558ca71782fccaa461f043"
-  },
-  "public/brand/savitri.png": {
-    "mtime": 1787814494.1276362,
-    "seen": 1787825129.8487635,
-    "ast_hash": "0c2adbd593e44200c2bebd658340793f",
-    "semantic_hash": "0c2adbd593e44200c2bebd658340793f"
-  },
-  "public/brand/semangkok-boci.png": {
-    "mtime": 1787814229.0981314,
-    "seen": 1787825129.8487635,
-    "ast_hash": "48d4ca8e9812ed41f0bee6a49025c75b",
-    "semantic_hash": "48d4ca8e9812ed41f0bee6a49025c75b"
-  },
-  "public/brand/serba-herbal.png": {
-    "mtime": 1787814234.202167,
-    "seen": 1787825129.8487635,
-    "ast_hash": "5bf002d9c5d2b4fc48d281a87ab9305e",
-    "semantic_hash": "5bf002d9c5d2b4fc48d281a87ab9305e"
-  },
-  "public/brand/soto-sumringah.png": {
-    "mtime": 1787814494.1538105,
-    "seen": 1787825129.8487635,
-    "ast_hash": "d1a0f66a1f8152318ce1b249f864f1dd",
-    "semantic_hash": "d1a0f66a1f8152318ce1b249f864f1dd"
-  },
-  "public/brand/sporti-id.png": {
-    "mtime": 1787814241.4405317,
-    "seen": 1787825129.8487635,
-    "ast_hash": "d1a73e7ff0dde5a7cc15097b9f81288f",
-    "semantic_hash": "d1a73e7ff0dde5a7cc15097b9f81288f"
-  },
-  "public/coach/coach.webp": {
-    "mtime": 1787821143.7229996,
-    "seen": 1787825129.8487635,
-    "ast_hash": "4ac9472c620fd88ddf6938dc055f7818",
-    "semantic_hash": "4ac9472c620fd88ddf6938dc055f7818"
-  },
-  "public/coach/photo.png": {
-    "mtime": 1787820545.5431228,
-    "seen": 1787825129.8487635,
-    "ast_hash": "4d5dc3d5b5d049247ccc139c3ee590c0",
-    "semantic_hash": "4d5dc3d5b5d049247ccc139c3ee590c0"
-  },
   "public/favicon.svg": {
     "mtime": 1787817821.473153,
     "seen": 1787825129.8487635,
     "ast_hash": "8644b6393759cffd2e81bafb143533d3",
     "semantic_hash": "8644b6393759cffd2e81bafb143533d3"
-  },
-  "public/icons.svg": {
-    "mtime": 1787794535.0140774,
-    "seen": 1787825129.8487635,
-    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
-    "semantic_hash": "3b4fcfcf393eca4d264dca4a4663bc37"
-  },
-  "public/riwayat-mengajar/dinkop-ukm-blitar.png": {
-    "mtime": 1787812463.940897,
-    "seen": 1787825129.8487635,
-    "ast_hash": "19650b08bfb2598636b740683c807679",
-    "semantic_hash": "19650b08bfb2598636b740683c807679"
-  },
-  "public/riwayat-mengajar/dinkop-ukm-diy.png": {
-    "mtime": 1787812476.738626,
-    "seen": 1787825129.8487635,
-    "ast_hash": "b4cad151f5fe1a4c573d97618f854633",
-    "semantic_hash": "b4cad151f5fe1a4c573d97618f854633"
-  },
-  "public/riwayat-mengajar/djp.png": {
-    "mtime": 1787812445.3038678,
-    "seen": 1787825129.8487635,
-    "ast_hash": "bf2f82dcc7b026dd8607d2b511924fed",
-    "semantic_hash": "bf2f82dcc7b026dd8607d2b511924fed"
-  },
-  "public/riwayat-mengajar/kemenkp-ukm.png": {
-    "mtime": 1787812437.7377388,
-    "seen": 1787825129.8487635,
-    "ast_hash": "31411d01a11c2a81b5e8ac5a2e12d395",
-    "semantic_hash": "31411d01a11c2a81b5e8ac5a2e12d395"
-  },
-  "public/riwayat-mengajar/kmapus-manager.png": {
-    "mtime": 1787812482.4582372,
-    "seen": 1787825129.8487635,
-    "ast_hash": "f6700c4f9a6fe9f4ab2c9d394952c1a9",
-    "semantic_hash": "f6700c4f9a6fe9f4ab2c9d394952c1a9"
-  },
-  "public/riwayat-mengajar/ojc.png": {
-    "mtime": 1787812456.264313,
-    "seen": 1787825129.8487635,
-    "ast_hash": "1b876beaee61718e93004fd0c333c63f",
-    "semantic_hash": "1b876beaee61718e93004fd0c333c63f"
-  },
-  "public/riwayat-mengajar/peta-mengajar.webp": {
-    "mtime": 1787823801.9817085,
-    "seen": 1787825129.8487635,
-    "ast_hash": "1eb40ba198989869915ccceca4e41eee",
-    "semantic_hash": "1eb40ba198989869915ccceca4e41eee"
-  },
-  "public/riwayat-mengajar/pmmm.png": {
-    "mtime": 1787812489.0900295,
-    "seen": 1787825129.8487635,
-    "ast_hash": "8604e1d6be756f7bbea7774254724ff9",
-    "semantic_hash": "8604e1d6be756f7bbea7774254724ff9"
-  },
-  "public/riwayat-mengajar/sbc.png": {
-    "mtime": 1787812450.652678,
-    "seen": 1787825129.8487635,
-    "ast_hash": "b979be65dad6032bb69fef13ccd1955a",
-    "semantic_hash": "b979be65dad6032bb69fef13ccd1955a"
-  },
-  "public/riwayat-mengajar/uii.png": {
-    "mtime": 1787812494.4670358,
-    "seen": 1787825129.8487635,
-    "ast_hash": "23f49ac0e8c1ba2252a76a24326bd868",
-    "semantic_hash": "23f49ac0e8c1ba2252a76a24326bd868"
-  },
-  "public/riwayat-mengajar/unair.png": {
-    "mtime": 1787806286.9306173,
-    "seen": 1787825129.849767,
-    "ast_hash": "493088f6ad34d71de8aa71dc6682b956",
-    "semantic_hash": "493088f6ad34d71de8aa71dc6682b956"
-  },
-  "public/superteam.webp": {
-    "mtime": 1787823824.1478064,
-    "seen": 1787825129.849767,
-    "ast_hash": "6fc7497e60c3791b202e358f8fa3b67c",
-    "semantic_hash": "6fc7497e60c3791b202e358f8fa3b67c"
-  },
-  "public/yayasan.webp": {
-    "mtime": 1787823815.6765232,
-    "seen": 1787825129.849767,
-    "ast_hash": "7eff85239a6b44c532c39b5c62324664",
-    "semantic_hash": "7eff85239a6b44c532c39b5c62324664"
   },
   "design-system/BRAND.md": {
     "mtime": 1787818401.1481626,
@@ -395,58 +149,34 @@
     "ast_hash": "d99a14b2bb1948b711d415f94606c373",
     "semantic_hash": "d99a14b2bb1948b711d415f94606c373"
   },
-  "public/kelas/kelas-1.webp": {
-    "mtime": 1787932806.0,
-    "seen": 1787960281.309156,
-    "ast_hash": "3d2a2579faec2ef9ea0d32010325b981",
-    "semantic_hash": "3d2a2579faec2ef9ea0d32010325b981"
+  "GRAPHIFY_RUNTIME.md": {
+    "mtime": 1788749815.8736887,
+    "seen": 1788750840.3463008,
+    "ast_hash": "2e17396ab2c2401faf1fb9a71d8cf29c",
+    "semantic_hash": "2e17396ab2c2401faf1fb9a71d8cf29c"
   },
-  "public/kelas/kelas-2.webp": {
-    "mtime": 1787932806.0,
-    "seen": 1787960281.309156,
-    "ast_hash": "98ed6618948e6a1ca55453c66ce4330b",
-    "semantic_hash": "98ed6618948e6a1ca55453c66ce4330b"
+  "graphify-out/memory/query_20260907_021252_silahkan_baca_graphify_out_yang_ada_di_project_lan.md": {
+    "mtime": 1788747172.0080717,
+    "seen": 1788750840.3463008,
+    "ast_hash": "11d7e559b7aa9500de4cb578a8f92063",
+    "semantic_hash": "11d7e559b7aa9500de4cb578a8f92063"
   },
-  "public/kelas/kelas-3.webp": {
-    "mtime": 1787911021.2658236,
-    "seen": 1787960281.309156,
-    "ast_hash": "8e1d36a11f0817aa5ab7858ea7f262bf",
-    "semantic_hash": "8e1d36a11f0817aa5ab7858ea7f262bf"
+  "graphify-out/memory/query_20260907_023445_oke_apakah_graphify_sudah_dipetakan_semua_untuk_pr.md": {
+    "mtime": 1788748485.6275206,
+    "seen": 1788750840.3463008,
+    "ast_hash": "c7e9c8773c8f67f68d760978cc59ac41",
+    "semantic_hash": "c7e9c8773c8f67f68d760978cc59ac41"
   },
-  "public/kelas/kelas-4.webp": {
-    "mtime": 1787932804.0,
-    "seen": 1787960281.309156,
-    "ast_hash": "cc94b8c75bd5ffc7a576bf62aeeef718",
-    "semantic_hash": "cc94b8c75bd5ffc7a576bf62aeeef718"
+  "graphify-out/memory/query_20260907_024138_apakah_perlu_di_lengkapi_semua.md": {
+    "mtime": 1788748898.2019198,
+    "seen": 1788750840.3463008,
+    "ast_hash": "106cc5f174582c4eeded7a37fe9886cc",
+    "semantic_hash": "106cc5f174582c4eeded7a37fe9886cc"
   },
-  "public/kelas/kelas-5.webp": {
-    "mtime": 1787911547.2009175,
-    "seen": 1787960281.309156,
-    "ast_hash": "834dcc54469b55ed6ca270a30e2cd6d0",
-    "semantic_hash": "834dcc54469b55ed6ca270a30e2cd6d0"
-  },
-  "public/kelas/kelas-6.webp": {
-    "mtime": 1787910229.4475896,
-    "seen": 1787960281.309156,
-    "ast_hash": "480bd5a869e66341e962d67db7852aee",
-    "semantic_hash": "480bd5a869e66341e962d67db7852aee"
-  },
-  "public/kelas/kelas-7.webp": {
-    "mtime": 1787910174.7819495,
-    "seen": 1787960281.309156,
-    "ast_hash": "d8dddc85e021ecef521390db161a04bc",
-    "semantic_hash": "d8dddc85e021ecef521390db161a04bc"
-  },
-  "public/kelas/kelas-8.webp": {
-    "mtime": 1787932804.0,
-    "seen": 1787960281.309156,
-    "ast_hash": "7ce19e9455d0d3c6cbc726c6a02b5906",
-    "semantic_hash": "7ce19e9455d0d3c6cbc726c6a02b5906"
-  },
-  "public/kelas/kelas-9.webp": {
-    "mtime": 1787932804.0,
-    "seen": 1787960281.309156,
-    "ast_hash": "37875e16e4c1478e90f055a785d1ef2f",
-    "semantic_hash": "37875e16e4c1478e90f055a785d1ef2f"
+  "AGENTS.md": {
+    "mtime": 1792138028.2329276,
+    "seen": 1792138045.4565997,
+    "ast_hash": "69c8f61843b713295259d31e73a41026",
+    "semantic_hash": ""
   }
 }

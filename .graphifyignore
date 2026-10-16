@@ -1,0 +1,21 @@
+# Keep the project graph focused on the shipped landing page.
+.opencode/
+graphify-out/
+node_modules/
+dist/
+
+# Dependency resolution is reproducible metadata, not application architecture.
+package-lock.json
+
+# Static reference artifacts that are not imported by the shipped React page.
+public/brand.html
+public/brand/emblem.svg
+public/icons.svg
+
+# Raster assets are mapped through GRAPHIFY_RUNTIME.md so their usage context is
+# preserved without creating isolated image-analysis communities.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp

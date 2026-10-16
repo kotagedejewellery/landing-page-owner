@@ -1,0 +1,182 @@
+{
+  ".oxlintrc.json": {
+    "mtime": 1787794534.1761265,
+    "seen": 1787825129.8487635,
+    "ast_hash": "5e6e3cea3e89137071c142dd7835b0ef",
+    "semantic_hash": "5e6e3cea3e89137071c142dd7835b0ef"
+  },
+  "package.json": {
+    "mtime": 1787796441.060642,
+    "seen": 1787825129.8487635,
+    "ast_hash": "83d9896fffa37a651d866a66e9e7c886",
+    "semantic_hash": "83d9896fffa37a651d866a66e9e7c886"
+  },
+  "src/App.jsx": {
+    "mtime": 1787818155.139254,
+    "seen": 1787825129.8487635,
+    "ast_hash": "cfc345ebbe495ba766c588ffda9ef3ca",
+    "semantic_hash": "cfc345ebbe495ba766c588ffda9ef3ca"
+  },
+  "src/components/About.jsx": {
+    "mtime": 1787908272.7577853,
+    "seen": 1787960281.308156,
+    "ast_hash": "01dd36f4cc1c88ee4b135106339e158f",
+    "semantic_hash": "01dd36f4cc1c88ee4b135106339e158f"
+  },
+  "src/components/Button.jsx": {
+    "mtime": 1787816842.7516048,
+    "seen": 1787825129.8487635,
+    "ast_hash": "a1847b0146683f75868d1aa78bc04d96",
+    "semantic_hash": "a1847b0146683f75868d1aa78bc04d96"
+  },
+  "src/components/Clients.jsx": {
+    "mtime": 1787820491.0886602,
+    "seen": 1787825129.8487635,
+    "ast_hash": "3d60b868194a1298d9b7c292fef08746",
+    "semantic_hash": "3d60b868194a1298d9b7c292fef08746"
+  },
+  "src/components/Footer.jsx": {
+    "mtime": 1788151820.1489778,
+    "seen": 1788161617.6876307,
+    "ast_hash": "06c1726bd21506064ab6ef720c5e5dba",
+    "semantic_hash": "06c1726bd21506064ab6ef720c5e5dba"
+  },
+  "src/components/Hero.jsx": {
+    "mtime": 1787821836.859902,
+    "seen": 1787825129.8487635,
+    "ast_hash": "ad3b0852b805c5721e0483c07f3fb856",
+    "semantic_hash": "ad3b0852b805c5721e0483c07f3fb856"
+  },
+  "src/components/Logo.jsx": {
+    "mtime": 1787817820.0675442,
+    "seen": 1787825129.8487635,
+    "ast_hash": "a381592ae44ed6e445c322c76fb692fb",
+    "semantic_hash": "a381592ae44ed6e445c322c76fb692fb"
+  },
+  "src/components/Masterclass.jsx": {
+    "mtime": 1787959919.1847267,
+    "seen": 1787960281.309156,
+    "ast_hash": "4e16c6e96d266d2985a54ce16defb9d4",
+    "semantic_hash": "4e16c6e96d266d2985a54ce16defb9d4"
+  },
+  "src/components/Nav.jsx": {
+    "mtime": 1788161259.211044,
+    "seen": 1788161617.6876307,
+    "ast_hash": "8ae68feab2d16d72757441e2228a7d28",
+    "semantic_hash": "8ae68feab2d16d72757441e2228a7d28"
+  },
+  "src/components/Private.jsx": {
+    "mtime": 1787822395.393183,
+    "seen": 1787825129.8487635,
+    "ast_hash": "ebe9c359a9561935ad8a0056f0dec2df",
+    "semantic_hash": "ebe9c359a9561935ad8a0056f0dec2df"
+  },
+  "src/components/Programs.jsx": {
+    "mtime": 1787817920.2194703,
+    "seen": 1787825129.8487635,
+    "ast_hash": "5562ec4b460829f2e90f9422d4793add",
+    "semantic_hash": "5562ec4b460829f2e90f9422d4793add"
+  },
+  "src/components/Reveal.jsx": {
+    "mtime": 1787796924.2147686,
+    "seen": 1787825129.8487635,
+    "ast_hash": "c6622713ad30b355f6ce78700a47b5e3",
+    "semantic_hash": "c6622713ad30b355f6ce78700a47b5e3"
+  },
+  "src/components/Speaker.jsx": {
+    "mtime": 1787904192.1604538,
+    "seen": 1787960281.309156,
+    "ast_hash": "fc2d8f0a7a96f2989ef7e21fed740748",
+    "semantic_hash": "fc2d8f0a7a96f2989ef7e21fed740748"
+  },
+  "src/lib/config.js": {
+    "mtime": 1787825765.8219059,
+    "seen": 1787890816.48253,
+    "ast_hash": "5e6fa4e660249b2a42615b30f32b8cd2",
+    "semantic_hash": "5e6fa4e660249b2a42615b30f32b8cd2"
+  },
+  "src/lib/gsap.js": {
+    "mtime": 1787796533.542132,
+    "seen": 1787825129.8487635,
+    "ast_hash": "c8d686c238c56ff27c115292a88d96d9",
+    "semantic_hash": "c8d686c238c56ff27c115292a88d96d9"
+  },
+  "src/lib/usePrefersReducedMotion.js": {
+    "mtime": 1787796921.8830922,
+    "seen": 1787825129.8487635,
+    "ast_hash": "bd8c419d2f492ef86752f182d3a0ca65",
+    "semantic_hash": "bd8c419d2f492ef86752f182d3a0ca65"
+  },
+  "src/main.jsx": {
+    "mtime": 1787798095.7636652,
+    "seen": 1787825129.8487635,
+    "ast_hash": "a9031a54a6f5c761b0ac0178e93e30e1",
+    "semantic_hash": "a9031a54a6f5c761b0ac0178e93e30e1"
+  },
+  "vite.config.js": {
+    "mtime": 1787794858.260778,
+    "seen": 1787825129.8487635,
+    "ast_hash": "844f5af05f82be907aaa0ee656d7ae33",
+    "semantic_hash": "844f5af05f82be907aaa0ee656d7ae33"
+  },
+  "README.md": {
+    "mtime": 1787794534.4678843,
+    "seen": 1787825129.8487635,
+    "ast_hash": "75eb386f17caf77fd6fe3ce1d90968ee",
+    "semantic_hash": "75eb386f17caf77fd6fe3ce1d90968ee"
+  },
+  "index.html": {
+    "mtime": 1787818173.741813,
+    "seen": 1787825129.8487635,
+    "ast_hash": "6d02396d964337f54f9f33a7a82c9974",
+    "semantic_hash": "6d02396d964337f54f9f33a7a82c9974"
+  },
+  "public/favicon.svg": {
+    "mtime": 1787817821.473153,
+    "seen": 1787825129.8487635,
+    "ast_hash": "8644b6393759cffd2e81bafb143533d3",
+    "semantic_hash": "8644b6393759cffd2e81bafb143533d3"
+  },
+  "design-system/BRAND.md": {
+    "mtime": 1787818401.1481626,
+    "seen": 1787890816.48253,
+    "ast_hash": "936a9bf637fc6a809dcbbf8f4c8de8cd",
+    "semantic_hash": "936a9bf637fc6a809dcbbf8f4c8de8cd"
+  },
+  "design-system/coach-joko/MASTER.md": {
+    "mtime": 1787889121.9172585,
+    "seen": 1787890816.48253,
+    "ast_hash": "d99a14b2bb1948b711d415f94606c373",
+    "semantic_hash": "d99a14b2bb1948b711d415f94606c373"
+  },
+  "GRAPHIFY_RUNTIME.md": {
+    "mtime": 1788749815.8736887,
+    "seen": 1788750840.3463008,
+    "ast_hash": "2e17396ab2c2401faf1fb9a71d8cf29c",
+    "semantic_hash": "2e17396ab2c2401faf1fb9a71d8cf29c"
+  },
+  "graphify-out/memory/query_20260907_021252_silahkan_baca_graphify_out_yang_ada_di_project_lan.md": {
+    "mtime": 1788747172.0080717,
+    "seen": 1788750840.3463008,
+    "ast_hash": "11d7e559b7aa9500de4cb578a8f92063",
+    "semantic_hash": "11d7e559b7aa9500de4cb578a8f92063"
+  },
+  "graphify-out/memory/query_20260907_023445_oke_apakah_graphify_sudah_dipetakan_semua_untuk_pr.md": {
+    "mtime": 1788748485.6275206,
+    "seen": 1788750840.3463008,
+    "ast_hash": "c7e9c8773c8f67f68d760978cc59ac41",
+    "semantic_hash": "c7e9c8773c8f67f68d760978cc59ac41"
+  },
+  "graphify-out/memory/query_20260907_024138_apakah_perlu_di_lengkapi_semua.md": {
+    "mtime": 1788748898.2019198,
+    "seen": 1788750840.3463008,
+    "ast_hash": "106cc5f174582c4eeded7a37fe9886cc",
+    "semantic_hash": "106cc5f174582c4eeded7a37fe9886cc"
+  },
+  "AGENTS.md": {
+    "mtime": 1792138028.2329276,
+    "seen": 1792138045.4565997,
+    "ast_hash": "69c8f61843b713295259d31e73a41026",
+    "semantic_hash": ""
+  }
+}

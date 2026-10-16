@@ -1,0 +1,181 @@
+{
+  "generated_at": "2026-09-07T02:48:13.861578+00:00",
+  "nodes": {
+    "design_system_coach_joko_master": {
+      "code_fingerprint": "b735f7fc1d7af80940ab69dbbcdce9c2236b5b30f8d61bbc51db71ea9dc23d0a",
+      "label": "Design System Master File",
+      "last": "2026-09-07T02:41:38.200920+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:41:38.200920+00:00",
+          "outcome": "useful",
+          "q": "Apakah perlu di lengkapi semua?"
+        },
+        {
+          "date": "2026-09-07T02:34:45.627520+00:00",
+          "outcome": "useful",
+          "q": "Oke apakah graphify sudah dipetakan semua untuk project ini?"
+        }
+      ],
+      "score": 1.999678086,
+      "source_file": "design-system/coach-joko/MASTER.md",
+      "status": "preferred",
+      "uses": 2
+    },
+    "index_html": {
+      "code_fingerprint": "70a652aef718926334303fd888d037dfed6caf1ac342dfd7eecf6e2f5050501d",
+      "label": "Landing Page Entry",
+      "last": "2026-09-07T02:41:38.200920+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:41:38.200920+00:00",
+          "outcome": "useful",
+          "q": "Apakah perlu di lengkapi semua?"
+        },
+        {
+          "date": "2026-09-07T02:34:45.627520+00:00",
+          "outcome": "useful",
+          "q": "Oke apakah graphify sudah dipetakan semua untuk project ini?"
+        }
+      ],
+      "score": 1.999678086,
+      "source_file": "index.html",
+      "status": "preferred",
+      "uses": 2
+    },
+    "src_app": {
+      "code_fingerprint": "befbd760ceecdbcea013d3c6dd4af160941315f98a26ae30c05679437c807329",
+      "label": "App.jsx",
+      "last": "2026-09-07T02:12:52.006369+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:12:52.006369+00:00",
+          "outcome": "useful",
+          "q": "Silahkan baca graphify-out yang ada di project landing page ini"
+        }
+      ],
+      "score": 0.999432739,
+      "source_file": "src/App.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_app_app": {
+      "code_fingerprint": "befbd760ceecdbcea013d3c6dd4af160941315f98a26ae30c05679437c807329",
+      "label": "App()",
+      "last": "2026-09-07T02:41:38.200920+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:41:38.200920+00:00",
+          "outcome": "useful",
+          "q": "Apakah perlu di lengkapi semua?"
+        },
+        {
+          "date": "2026-09-07T02:34:45.627520+00:00",
+          "outcome": "useful",
+          "q": "Oke apakah graphify sudah dipetakan semua untuk project ini?"
+        }
+      ],
+      "score": 1.999678086,
+      "source_file": "src/App.jsx",
+      "status": "preferred",
+      "uses": 2
+    },
+    "src_components_nav_nav": {
+      "code_fingerprint": "86d2ed9ad20323f1884a996834bd28eba078cbaf14fcf13558bfbccb4c6df636",
+      "label": "Nav()",
+      "last": "2026-09-07T02:34:45.627520+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:34:45.627520+00:00",
+          "outcome": "useful",
+          "q": "Oke apakah graphify sudah dipetakan semua untuk project ini?"
+        }
+      ],
+      "score": 0.999783887,
+      "source_file": "src/components/Nav.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_components_reveal_reveal": {
+      "code_fingerprint": "38f8e7ef9b5795d68b7867f94d18cd6b4ddbb0cba61bfb98acc38429506b82e2",
+      "label": "Reveal()",
+      "last": "2026-09-07T02:12:52.006369+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:12:52.006369+00:00",
+          "outcome": "useful",
+          "q": "Silahkan baca graphify-out yang ada di project landing page ini"
+        }
+      ],
+      "score": 0.999432739,
+      "source_file": "src/components/Reveal.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_lib_config_wa_messages": {
+      "code_fingerprint": "c02e7b114895e5d0aa27809e383d7185a99965156f29ee47c26a2926b080a582",
+      "label": "WA_MESSAGES",
+      "last": "2026-09-07T02:12:52.006369+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:12:52.006369+00:00",
+          "outcome": "useful",
+          "q": "Silahkan baca graphify-out yang ada di project landing page ini"
+        }
+      ],
+      "score": 0.999432739,
+      "source_file": "src/lib/config.js",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_lib_config_walink": {
+      "code_fingerprint": "c02e7b114895e5d0aa27809e383d7185a99965156f29ee47c26a2926b080a582",
+      "label": "waLink()",
+      "last": "2026-09-07T02:12:52.006369+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:12:52.006369+00:00",
+          "outcome": "useful",
+          "q": "Silahkan baca graphify-out yang ada di project landing page ini"
+        }
+      ],
+      "score": 0.999432739,
+      "source_file": "src/lib/config.js",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_lib_useprefersreducedmotion_useprefersreducedmotion": {
+      "code_fingerprint": "4dab6429c65fc3f9d8553071ca02d2a8dab56ea25b68f587306f229b670c20fc",
+      "label": "usePrefersReducedMotion()",
+      "last": "2026-09-07T02:12:52.006369+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:12:52.006369+00:00",
+          "outcome": "useful",
+          "q": "Silahkan baca graphify-out yang ada di project landing page ini"
+        }
+      ],
+      "score": 0.999432739,
+      "source_file": "src/lib/usePrefersReducedMotion.js",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_main": {
+      "code_fingerprint": "007ee80a8f8cec6bf6e4a0797ad13b562b7df3c286c7a99a7304d2b113551127",
+      "label": "main.jsx",
+      "last": "2026-09-07T02:12:52.006369+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-07T02:12:52.006369+00:00",
+          "outcome": "useful",
+          "q": "Silahkan baca graphify-out yang ada di project landing page ini"
+        }
+      ],
+      "score": 0.999432739,
+      "source_file": "src/main.jsx",
+      "status": "tentative",
+      "uses": 1
+    }
+  },
+  "version": 1
+}

@@ -1,146 +1,170 @@
-# Graph Report - landing-page-CEO  (2026-08-31)
+# Graph Report - landing-page-CEO  (2026-10-16)
 
 ## Corpus Check
-- Large corpus: 71 files · ~535,573 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- 28 files · ~8,348 words
+- Verdict: corpus is large enough that graph structure adds value.
+- Unclassified: 3 file(s) not represented in the graph (top: (none) 2, .css 1)
 
 ## Summary
-- 211 nodes · 268 edges · 34 communities (12 shown, 22 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.87)
+- 169 nodes · 269 edges · 26 communities (16 shown, 10 thin omitted)
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.93)
 - Token cost: 0 input · 0 output
 
+## Graph Freshness
+- Built from commit: `f48d108f`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
 ## Community Hubs (Navigation)
-- Landing Page UI
-- UI/UX Search Core
-- Frontend Dependencies
-- Build Tooling
-- Lint Rules
-- Design System Generator
-- BM25 Search
-- Kelas & Dokumentasi
-- Brand & Design System
-- Coach Profile
-- Partner Organizations
-- Landing Page
-- Lentera Bisnis Academy
-- Teaching Map
-- Abata Jogja
-- Safar Brand
-- Brand Emblem
-- Brand Web View
-- KotaGede Jewellery
-- Icon Set
-- Kelas Dokumentasi
-- Kelas Dokumentasi
-- Kelas Dokumentasi
-- Kelas Dokumentasi
-- Kelas Dokumentasi
-- Dinkop UKM Blitar
-- Dinkop UKM DIY
-- DJP Logo
-- Kemenkop UKM
-- KMapus Manager
-- OJC Logo
-- PMMM Logo
-- SBC Logo
+- Speaker.jsx
+- dependencies
+- package.json
+- Coach Joko Landing Page Entry
+- Reveal.jsx
+- App.jsx
+- Coach Joko Brand Guidelines
+- .oxlintrc.json
+- CEO Landing Page Favicon
+- Instruksi Agen — Landing Page Coach Joko Wardiyanto
+- Reduced Motion Accessibility
+- React and Vite Template
+- Centralized WhatsApp and Social Configuration
+- devDependencies
+- Cormorant Garamond 400
+- Cormorant Garamond 400 Italic
+- Cormorant Garamond 500
+- Cormorant Garamond 500 Italic
+- Outfit 400
+- Outfit 500
+- Outfit 600
+- gsap/ScrollTrigger
+- react-dom/client
+- About.jsx
+- Footer.jsx
+- Masterclass.jsx
 
 ## God Nodes (most connected - your core abstractions)
-1. `DesignSystemGenerator` - 11 edges
-2. `search()` - 9 edges
-3. `waLink()` - 8 edges
-4. `BM25` - 7 edges
-5. `generate_design_system()` - 7 edges
-6. `_search_csv()` - 6 edges
-7. `persist_design_system()` - 6 edges
-8. `usePrefersReducedMotion()` - 6 edges
-9. `WA_MESSAGES` - 6 edges
-10. `_generate_intelligent_overrides()` - 5 edges
+1. `Reveal()` - 17 edges
+2. `Button()` - 14 edges
+3. `App()` - 11 edges
+4. `waLink()` - 11 edges
+5. `Instruksi Agen — Landing Page Coach Joko Wardiyanto` - 9 edges
+6. `@phosphor-icons/react` - 8 edges
+7. `Footer()` - 7 edges
+8. `Hero()` - 6 edges
+9. `Logo()` - 6 edges
+10. `Masterclass()` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Landing Page Entry` --references--> `Favicon SVG`  [EXTRACTED]
-  index.html → public/favicon.svg
-- `Design System Master File` --references--> `Testimonials Component`  [EXTRACTED]
-  design-system/coach-joko/MASTER.md → src/components/Testimonials.jsx
-- `PT Kotagede Jewellery Group` --conceptually_related_to--> `Yayasan Riyadhul Jannah Indonesia`  [INFERRED]
-  public/superteam.webp → public/yayasan.webp
-- `Joko Wardiyanto` --conceptually_related_to--> `Universitas Islam Indonesia Logo`  [INFERRED]
-  public/coach/photo.png → public/riwayat-mengajar/uii.png
-- `Joko Wardiyanto` --conceptually_related_to--> `Universitas Airlangga Logo`  [INFERRED]
-  public/coach/photo.png → public/riwayat-mengajar/unair.png
+- `Batas perubahan` --references--> `Logo()`  [INFERRED]
+  AGENTS.md → src/components/Logo.jsx
+- `Batas perubahan` --references--> `Button()`  [INFERRED]
+  AGENTS.md → src/components/Button.jsx
+- `Batas perubahan` --references--> `Reveal()`  [INFERRED]
+  AGENTS.md → src/components/Reveal.jsx
+- `Centralized WhatsApp and Social Configuration` --semantically_similar_to--> `Centralized CTA Configuration`  [INFERRED] [semantically similar]
+  design-system/BRAND.md → GRAPHIFY_RUNTIME.md
+- `Design Tooling Graph Noise` --semantically_similar_to--> `Deliberate Graph Boundaries`  [INFERRED] [semantically similar]
+  graphify-out/memory/query_20260907_021252_silahkan_baca_graphify_out_yang_ada_di_project_lan.md → GRAPHIFY_RUNTIME.md
 
 ## Import Cycles
 - None detected.
 
 ## Hyperedges (group relationships)
-- **Business Education Program Flow** — public_kelas_kelas_2, public_kelas_kelas_5, public_kelas_kelas_8, public_kelas_kelas_9 [EXTRACTED 0.95]
-- **Visual Identity System** — public_icons [EXTRACTED 0.95]
-- **Teaching History Institutions** — public_riwayat_mengajar_dinkop_ukm_blitar, public_riwayat_mengajar_dinkop_ukm_diy, public_riwayat_mengajar_djp, public_riwayat_mengajar_kemenkp_ukm, public_riwayat_mengajar_uii, public_riwayat_mengajar_unair [EXTRACTED 1.00]
-- **Corporate and Social Impact Ecosystem** — pt_kotagede_jewellery_group, public_yayasan_riyadhul_jannah_indonesia, riwayat_mengajar [INFERRED 0.90]
+- **Landing Page Runtime System** — graphify_runtime_entry_and_render_flow, graphify_runtime_ordered_page_composition, graphify_runtime_navigation_interaction_accessibility, graphify_runtime_shared_motion_system, graphify_runtime_centralized_cta_configuration, graphify_runtime_global_style_foundation [EXTRACTED 1.00]
+- **Coach Joko Visual Identity** — design_system_brand_the_clarity_point, design_system_brand_warm_dark_palette, design_system_brand_editorial_typography, design_system_coach_joko_master_dark_cinematic_luxury_system [INFERRED 0.95]
+- **Decision-Complete Graph Coverage** — graphify_runtime_deliberate_graph_boundaries, graphify_out_memory_query_20260907_023445_oke_apakah_graphify_sudah_dipetakan_semua_untuk_pr_coverage_audit, graphify_out_memory_query_20260907_024138_apakah_perlu_di_lengkapi_semua_decision_complete_scope, graphify_out_memory_query_20260907_024138_apakah_perlu_di_lengkapi_semua_runtime_first_coverage [INFERRED 0.95]
 
-## Communities (34 total, 22 thin omitted)
+## Communities (26 total, 10 thin omitted)
 
-### Community 0 - "Landing Page UI"
-Cohesion: 0.09
-Nodes (34): About(), brands, education, roles, Button(), circle, shell, Clients (+26 more)
+### Community 0 - "Speaker.jsx"
+Cohesion: 0.19
+Nodes (9): @phosphor-icons/react, circle, shell, fitFor, options, institutions, kegiatan, themes (+1 more)
 
-### Community 1 - "UI/UX Search Core"
+### Community 1 - "dependencies"
+Cohesion: 0.18
+Nodes (11): dependencies, @fontsource/cormorant-garamond, @fontsource/manrope, @fontsource/outfit, gsap, @gsap/react, @phosphor-icons/react, react (+3 more)
+
+### Community 2 - "package.json"
 Cohesion: 0.10
-Nodes (28): detect_domain(), _load_csv(), Load CSV and return list of dicts, Core search function using BM25, Auto-detect the most relevant domain from query, Main search function with auto-domain detection, Search stack-specific guidelines, search() (+20 more)
+Nodes (21): name, private, scripts, build, dev, lint, preview, type (+13 more)
 
-### Community 2 - "Frontend Dependencies"
-Cohesion: 0.10
-Nodes (21): @fontsource/cormorant-garamond, @fontsource/manrope, @fontsource/outfit, gsap, @gsap/react, dependencies, @fontsource/cormorant-garamond, @fontsource/manrope (+13 more)
+### Community 3 - "Coach Joko Landing Page Entry"
+Cohesion: 0.13
+Nodes (15): Accessibility and Delivery Checklist, AIDA Page Pattern, Landing Page Graph Snapshot, Design Tooling Graph Noise, Runtime-First Graph Coverage, Deliberate Graph Boundaries, Entry and Render Flow, Landing Page Runtime Map (+7 more)
 
-### Community 3 - "Build Tooling"
-Cohesion: 0.10
-Nodes (20): oxlint, devDependencies, oxlint, @types/react, @types/react-dom, vite, @vitejs/plugin-react, name (+12 more)
+### Community 4 - "Reveal.jsx"
+Cohesion: 0.18
+Nodes (12): gsap, @gsap/react, react, stats, Logo(), links, Nav(), sectionIds (+4 more)
 
-### Community 4 - "Lint Rules"
-Cohesion: 0.11
-Nodes (12): plugins, rules, react/only-export-components, react/rules-of-hooks, $schema, oxc, react, warn (+4 more)
+### Community 5 - "App.jsx"
+Cohesion: 0.40
+Nodes (11): Batas perubahan, App(), About(), Button(), Clients, Hero(), Masterclass(), Private() (+3 more)
 
-### Community 5 - "Design System Generator"
-Cohesion: 0.16
-Nodes (9): DesignSystemGenerator, Select best matching result based on priority keywords., Extract results list from search result dict., Generate complete design system recommendation., Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Execute searches across multiple domains., Find matching reasoning rule for a category. (+1 more)
+### Community 6 - "Coach Joko Brand Guidelines"
+Cohesion: 0.12
+Nodes (16): Menumbuhkan Bisnis, Menguatkan Sistem, Membangun Superteam, Coach Joko Brand Guidelines, Cormorant Garamond and Outfit Typography, Practical Indonesian Brand Voice, The Clarity Point, Warm Dark Brand Palette, Dark Cinematic Luxury System, Design System Master File (+8 more)
 
-### Community 6 - "BM25 Search"
-Cohesion: 0.28
-Nodes (5): BM25, Lowercase, split, remove punctuation, filter short words, Build BM25 index from documents, Score all documents against query, BM25 ranking algorithm for text search
+### Community 7 - ".oxlintrc.json"
+Cohesion: 0.33
+Nodes (5): plugins, rules, react/only-export-components, react/rules-of-hooks, $schema
 
-### Community 7 - "Kelas & Dokumentasi"
+### Community 8 - "CEO Landing Page Favicon"
+Cohesion: 0.67
+Nodes (4): Abstract Peak Mark, Dark Rounded Tile, CEO Landing Page Favicon, Gold Apex Dot
+
+### Community 9 - "Instruksi Agen — Landing Page Coach Joko Wardiyanto"
+Cohesion: 0.22
+Nodes (8): Instruksi Agen — Landing Page Coach Joko Wardiyanto, Klarifikasi dan kegagalan tool, Konteks proyek dan sumber acuan, Perbaikan bug, Perlindungan data dan database, Prinsip akhir, Urutan kerja, Validasi dan performa
+
+### Community 10 - "Reduced Motion Accessibility"
+Cohesion: 1.33
+Nodes (3): GSAP Motion Policy, Reduced Motion Accessibility, Shared GSAP Motion System
+
+### Community 11 - "React and Vite Template"
+Cohesion: 0.67
+Nodes (3): HMR and Oxlint Setup, React Compiler Disabled, React and Vite Template
+
+### Community 13 - "devDependencies"
+Cohesion: 0.33
+Nodes (6): devDependencies, oxlint, @types/react, @types/react-dom, vite, @vitejs/plugin-react
+
+### Community 23 - "About.jsx"
 Cohesion: 0.29
-Nodes (7): Kotagede Jewellery, Scale Up Masterclass, Hijaz Moslem Jewelry Logo, Business Masterclass Presentation, Scale Up Masterclass Presentation, Educational Content Display, Superteam Presentation
+Nodes (6): brands, education, roles, TODO: ganti URL sosial media dengan akun asli., SOCIALS, WHATSAPP_NUMBER
 
-### Community 8 - "Brand & Design System"
-Cohesion: 0.40
-Nodes (5): Dark Cinematic Luxury, Brand Guidelines, Design System Master File, Testimonials Component, The Clarity Point
-
-### Community 9 - "Coach Profile"
-Cohesion: 0.40
-Nodes (5): Joko Wardiyanto, Coach Joko Wardiyanto Speaking, Coach Joko Wardiyanto Portrait, Universitas Islam Indonesia Logo, Universitas Airlangga Logo
-
-### Community 10 - "Partner Organizations"
+### Community 24 - "Footer.jsx"
 Cohesion: 0.50
-Nodes (4): PT Kotagede Jewellery Group, PT Kotagede Jewellery Group Superteam Photo, Yayasan Riyadhul Jannah Indonesia, Yayasan Riyadhul Jannah Indonesia Infographic
+Nodes (4): Footer(), legal, socialList, waLink()
+
+### Community 25 - "Masterclass.jsx"
+Cohesion: 0.50
+Nodes (3): fitFor, kelas, pillars
 
 ## Knowledge Gaps
-- **84 isolated node(s):** `brands`, `education`, `roles`, `circle`, `shell` (+79 more)
-  These have ≤1 connection - possible missing edges or undocumented components.
-- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **82 isolated node(s):** `$schema`, `plugins`, `react/rules-of-hooks`, `react/only-export-components`, `name` (+77 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 90 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Work-memory lessons
+
+**Preferred sources** — corroborated by past sessions; start here.
+- `Design System Master File` (2× useful, score=1.999678086)
+- `Landing Page Entry` (2× useful, score=1.999678086)
+- `App()` (2× useful, score=1.999678086)
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `dependencies` connect `Frontend Dependencies` to `Build Tooling`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
-- **Why does `DesignSystemGenerator` connect `Design System Generator` to `UI/UX Search Core`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `react` connect `Lint Rules` to `Landing Page UI`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
-- **What connects `brands`, `education`, `roles` to the rest of the system?**
-  _84 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Landing Page UI` be split into smaller, more focused modules?**
-  _Cohesion score 0.08788159111933395 - nodes in this community are weakly interconnected._
-- **Should `UI/UX Search Core` be split into smaller, more focused modules?**
-  _Cohesion score 0.1032258064516129 - nodes in this community are weakly interconnected._
-- **Should `Frontend Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+- **Why does `Reveal()` connect `App.jsx` to `Reveal.jsx`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `Coach Joko Landing Page Entry` connect `Coach Joko Landing Page Entry` to `Coach Joko Brand Guidelines`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `$schema`, `plugins`, `react/rules-of-hooks` to the rest of the system?**
+  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `package.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.09782608695652174 - nodes in this community are weakly interconnected._
+- **Should `Coach Joko Landing Page Entry` be split into smaller, more focused modules?**
+  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+- **Should `Coach Joko Brand Guidelines` be split into smaller, more focused modules?**
+  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
