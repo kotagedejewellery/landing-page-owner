@@ -120,16 +120,16 @@
     "semantic_hash": "844f5af05f82be907aaa0ee656d7ae33"
   },
   "README.md": {
-    "mtime": 1787794534.4678843,
-    "seen": 1787825129.8487635,
-    "ast_hash": "75eb386f17caf77fd6fe3ce1d90968ee",
-    "semantic_hash": "75eb386f17caf77fd6fe3ce1d90968ee"
+    "mtime": 1793328165.877153,
+    "seen": 1793328170.6829545,
+    "ast_hash": "a7cdcad3fc66f3351da8916f2f28f168",
+    "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1787818173.741813,
-    "seen": 1787825129.8487635,
-    "ast_hash": "6d02396d964337f54f9f33a7a82c9974",
-    "semantic_hash": "6d02396d964337f54f9f33a7a82c9974"
+    "mtime": 1793324586.976471,
+    "seen": 1793324832.9310243,
+    "ast_hash": "7af45ffcad632f01907d2e840f9dd188",
+    "semantic_hash": ""
   },
   "public/favicon.svg": {
     "mtime": 1787817821.473153,
@@ -150,10 +150,10 @@
     "semantic_hash": "d99a14b2bb1948b711d415f94606c373"
   },
   "GRAPHIFY_RUNTIME.md": {
-    "mtime": 1788749815.8736887,
-    "seen": 1788750840.3463008,
-    "ast_hash": "2e17396ab2c2401faf1fb9a71d8cf29c",
-    "semantic_hash": "2e17396ab2c2401faf1fb9a71d8cf29c"
+    "mtime": 1793327553.369576,
+    "seen": 1793327561.7059252,
+    "ast_hash": "f4ca9b8135c2e83632fa5c9b5c7fb2b0",
+    "semantic_hash": ""
   },
   "graphify-out/memory/query_20260907_021252_silahkan_baca_graphify_out_yang_ada_di_project_lan.md": {
     "mtime": 1788747172.0080717,
@@ -177,6 +177,30 @@
     "mtime": 1792138028.2329276,
     "seen": 1792138045.4565997,
     "ast_hash": "69c8f61843b713295259d31e73a41026",
+    "semantic_hash": ""
+  },
+  "deploy/deploy.sh": {
+    "mtime": 1793327552.4352007,
+    "seen": 1793327561.7058496,
+    "ast_hash": "981415544c1d7f0e6715100e5215e9f4",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy.yml": {
+    "mtime": 1793324710.7953901,
+    "seen": 1793324832.9309986,
+    "ast_hash": "41a1696472bc34f2968a83d67399b8f4",
+    "semantic_hash": ""
+  },
+  "compose.production.yml": {
+    "mtime": 1793324575.0947208,
+    "seen": 1793324832.9310057,
+    "ast_hash": "b2cd54feb4b30ddaa2b7868c17586ebb",
+    "semantic_hash": ""
+  },
+  "docs/DEPLOYMENT.md": {
+    "mtime": 1793327554.1695356,
+    "seen": 1793327561.705942,
+    "ast_hash": "d22f2697946ac07db351f3cd4027fb37",
     "semantic_hash": ""
   }
 }

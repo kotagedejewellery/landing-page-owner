@@ -1,16 +1,16 @@
 {
-  "0": "Speaker.jsx",
+  "0": "App.jsx",
   "1": "dependencies",
   "2": "package.json",
   "3": "Coach Joko Landing Page Entry",
-  "4": "Reveal.jsx",
-  "5": "App.jsx",
+  "4": "React and Vite Template",
+  "5": "deploy.sh",
   "6": "Coach Joko Brand Guidelines",
   "7": ".oxlintrc.json",
   "8": "CEO Landing Page Favicon",
   "9": "Instruksi Agen — Landing Page Coach Joko Wardiyanto",
   "10": "Reduced Motion Accessibility",
-  "11": "React and Vite Template",
+  "11": "Deployment production — jokowardiyanto.com",
   "12": "Centralized WhatsApp and Social Configuration",
   "13": "devDependencies",
   "14": "Cormorant Garamond 400",
@@ -22,7 +22,5 @@
   "20": "Outfit 600",
   "21": "gsap/ScrollTrigger",
   "22": "react-dom/client",
-  "23": "About.jsx",
-  "24": "Footer.jsx",
-  "25": "Masterclass.jsx"
+  "23": "Footer.jsx"
 }

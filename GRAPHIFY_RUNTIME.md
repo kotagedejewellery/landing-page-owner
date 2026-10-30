@@ -127,7 +127,7 @@ ports, application environment variables, backend, or database are required.
 
 [GitHub Actions](.github/workflows/deploy.yml) validates the image and sends the
 checked commit SHA over SSH to the [deployment script](deploy/deploy.sh). That
-script updates only `/opt/apps/landing-page/landing-page-coach`, builds before
+script updates only `/opt/apps/landing-page`, builds before
 replacing the application container, verifies origin HTTPS through local Traefik,
 and saves the existing VPS audit output. The [deployment guide](docs/DEPLOYMENT.md)
 describes initial setup, GitHub Secrets, DNS migration from Vercel, and rollback.

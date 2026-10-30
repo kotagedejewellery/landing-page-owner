@@ -26,7 +26,7 @@ dari push `main`. Pertahankan situs lama selama proses verifikasi.
 | Backend/database | Tidak ada; konsultasi memakai tautan WhatsApp |
 | Domain | `jokowardiyanto.com`, canonical HTTPS tanpa `www` |
 | Compose project | `landing-page-coach`, satu service `app` |
-| Folder VPS | `/opt/apps/landing-page/landing-page-coach` |
+| Folder VPS | `/opt/apps/landing-page` |
 | Routing | Traefik v2.11 existing, network external `proxy`, entrypoint `web`/`websecure`, resolver `letsencrypt` |
 
 Nginx hanya menyajikan berkas landing page di dalam container aplikasi. Traefik
@@ -62,15 +62,15 @@ Administrator menyediakan folder terpisah yang dapat ditulis oleh user deploymen
 
 ```bash
 sudo install -d -o Kotagede-Jewellery -g "$(id -gn Kotagede-Jewellery)" \
-  /opt/apps/landing-page/landing-page-coach
+  /opt/apps/landing-page
 ```
 
 Sebagai `Kotagede-Jewellery`, clone repository ke folder kosong tersebut:
 
 ```bash
 git clone https://github.com/kotagedejewellery/landing-page-owner.git \
-  /opt/apps/landing-page/landing-page-coach
-cd /opt/apps/landing-page/landing-page-coach
+  /opt/apps/landing-page
+cd /opt/apps/landing-page
 ```
 
 Jika repository private, sediakan akses baca noninteraktif VPS ke repository,
@@ -116,7 +116,7 @@ Commit konfigurasi ini harus sudah tersedia di repository. Pada VPS, periksa
 source dan konfigurasi sebelum menjalankan container landing page:
 
 ```bash
-cd /opt/apps/landing-page/landing-page-coach
+cd /opt/apps/landing-page
 docker compose -f compose.production.yml config
 docker compose -f compose.production.yml build app
 docker compose -f compose.production.yml up --detach --no-build --wait --wait-timeout 120 app
@@ -192,7 +192,7 @@ Jika penggantian container atau HTTPS gagal, workflow gagal dan container baru
 tidak otomatis dikembalikan. Periksa log lalu rollback hanya landing page:
 
 ```bash
-cd /opt/apps/landing-page/landing-page-coach
+cd /opt/apps/landing-page
 docker image inspect landing-page-coach:previous
 docker image tag landing-page-coach:previous landing-page-coach:production
 docker compose -f compose.production.yml up --detach --no-build --wait --wait-timeout 120 app

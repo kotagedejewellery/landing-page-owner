@@ -7,7 +7,7 @@ if [[ ! $revision =~ ^[0-9a-f]{40}$ ]]; then
   exit 1
 fi
 
-cd /opt/apps/landing-page/landing-page-coach
+cd /opt/apps/landing-page
 test -x "$HOME/vps-audit.sh"
 if [[ -n $(git status --porcelain) ]]; then
   echo "Production checkout has local changes. Resolve them before deploying." >&2
