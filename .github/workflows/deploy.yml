@@ -1,0 +1,87 @@
+name: Deploy Landing Page Production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: landing-page-coach-production
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Validate deployment configuration
+        run: |
+          bash -n deploy/deploy.sh
+          docker compose -f compose.production.yml config --quiet
+
+      - name: Build production image (lint and Vite build)
+        run: docker compose -f compose.production.yml build app
+
+      - name: Smoke test production container
+        run: |
+          set -euo pipefail
+          docker network create proxy
+          docker compose -f compose.production.yml up --detach --no-build --wait --wait-timeout 90 app
+          docker compose -f compose.production.yml exec -T app nginx -t
+          docker compose -f compose.production.yml exec -T app wget -q -O /dev/null http://127.0.0.1/
+          docker compose -f compose.production.yml exec -T app wget -q -O /dev/null http://127.0.0.1/coach/photo.png
+          docker compose -f compose.production.yml exec -T app wget -q -O /dev/null http://127.0.0.1/favicon.svg
+          if docker compose -f compose.production.yml exec -T app wget -q -O /dev/null http://127.0.0.1/assets/missing-file.js; then
+            echo "Missing assets must return HTTP 404." >&2
+            exit 1
+          fi
+
+      - name: Show container logs on failure
+        if: failure()
+        run: docker compose -f compose.production.yml logs --tail=100 app
+
+  deploy:
+    needs: check
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Deploy checked commit to VPS 1
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_SSH_KNOWN_HOSTS: ${{ secrets.VPS_SSH_KNOWN_HOSTS }}
+          DEPLOY_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          : "${VPS_HOST:?Set VPS_HOST in GitHub Secrets}"
+          : "${VPS_USER:?Set VPS_USER in GitHub Secrets}"
+          : "${VPS_SSH_KEY:?Set VPS_SSH_KEY in GitHub Secrets}"
+          : "${VPS_SSH_KNOWN_HOSTS:?Set VPS_SSH_KNOWN_HOSTS in GitHub Secrets}"
+          [[ "$VPS_USER" == "Kotagede-Jewellery" ]]
+          [[ "$VPS_HOST" =~ ^[a-zA-Z0-9][a-zA-Z0-9.-]*$ ]]
+          [[ "$DEPLOY_SHA" =~ ^[0-9a-f]{40}$ ]]
+
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/id_ed25519
+          printf '%s\n' "$VPS_SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/id_ed25519 ~/.ssh/known_hosts
+          trap 'rm -f ~/.ssh/id_ed25519 ~/.ssh/known_hosts' EXIT
+
+          ssh -i ~/.ssh/id_ed25519 \
+            -o BatchMode=yes -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes -o ConnectTimeout=15 \
+            -l "$VPS_USER" "$VPS_HOST" \
+            "bash -s -- '$DEPLOY_SHA'" < deploy/deploy.sh

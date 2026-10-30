@@ -116,6 +116,22 @@ Laptop, Little Jenna, Semangkok Boci, Savitri Gift, Kanida Kerudung, Kampung
 Inggris Solo, Herba Natura, Soto Sumringah, Gembala Kambing Jogja, Sporti ID,
 Beanbag Sultan, Abata Jogja, Bagaskara Jaya Abadi, and UD Serba Herbal.
 
+## Production deployment
+
+[Dockerfile](Dockerfile) builds the static page with Node.js 24 and serves only
+`dist/` using the container-local [Nginx configuration](deploy/nginx.conf).
+[Production Compose](compose.production.yml) defines the isolated
+`landing-page-coach` project, internal port 80, a health check, and Traefik v2.11
+labels for `jokowardiyanto.com` on the existing external `proxy` network. No host
+ports, application environment variables, backend, or database are required.
+
+[GitHub Actions](.github/workflows/deploy.yml) validates the image and sends the
+checked commit SHA over SSH to the [deployment script](deploy/deploy.sh). That
+script updates only `/opt/apps/landing-page/landing-page-coach`, builds before
+replacing the application container, verifies origin HTTPS through local Traefik,
+and saves the existing VPS audit output. The [deployment guide](docs/DEPLOYMENT.md)
+describes initial setup, GitHub Secrets, DNS migration from Vercel, and rollback.
+
 ## Deliberate graph boundaries
 
 The graph excludes `.opencode`, dependency trees, build output, lockfiles, raw

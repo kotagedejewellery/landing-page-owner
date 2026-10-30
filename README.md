@@ -1,16 +1,40 @@
-# React + Vite
+# Landing Page Coach Joko Wardiyanto
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page React/Vite untuk masterclass, pendampingan privat, dan undangan
+pembicara. Domain production: **https://jokowardiyanto.com**.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Gunakan Node.js 24 dan npm (lockfile: `package-lock.json`).
 
-## React Compiler
+```bash
+npm ci
+npm run dev
+npm run lint
+npm run build
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Pada PowerShell yang memblokir `npm.ps1`, gunakan `npm.cmd`.
 
-## Expanding the Oxlint configuration
+## Production VPS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Deployment menggunakan Docker Compose dan Traefik existing di VPS 1. Nginx di
+dalam container menyajikan hasil build `dist/` pada port internal `80`, melalui
+external network `proxy`. Tidak ada port host, backend, atau database tambahan.
+
+[Panduan deployment, GitHub Secrets, perpindahan DNS, dan rollback](docs/DEPLOYMENT.md).
+
+Pengaturan VPS, DNS, dan GitHub Secrets dilakukan sendiri oleh pemilik mengikuti
+panduan tersebut, tanpa memberikan akses atau credential kepada agen.
+
+Push ke `main` menjalankan pemeriksaan image, kemudian deployment melalui SSH
+setelah VPS dan empat GitHub Secrets selesai disiapkan. Hosting production
+tidak memerlukan Vercel. Jangan menonaktifkan situs lama sebelum HTTPS VPS
+berhasil diverifikasi dan propagasi DNS selesai.
+
+## Konten dan kontak
+
+Konten halaman berada di `src/components/`. Nomor WhatsApp, template pesan,
+dan tautan media sosial berada di `src/lib/config.js`. Aplikasi saat ini tidak
+memerlukan environment variable atau `.env.production`. Jangan memasukkan
+secret ke source frontend atau image Docker.

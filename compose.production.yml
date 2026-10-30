@@ -1,0 +1,38 @@
+name: landing-page-coach
+
+services:
+  app:
+    image: landing-page-coach:production
+    build:
+      context: .
+    restart: unless-stopped
+    expose:
+      - "80"
+    networks:
+      - proxy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: proxy
+      traefik.http.routers.landing-page-coach-http.rule: Host(`jokowardiyanto.com`)
+      traefik.http.routers.landing-page-coach-http.entrypoints: web
+      traefik.http.routers.landing-page-coach-http.middlewares: landing-page-coach-https
+      traefik.http.routers.landing-page-coach-http.service: landing-page-coach
+      traefik.http.middlewares.landing-page-coach-https.redirectscheme.scheme: https
+      traefik.http.middlewares.landing-page-coach-https.redirectscheme.permanent: "true"
+      traefik.http.routers.landing-page-coach.rule: Host(`jokowardiyanto.com`)
+      traefik.http.routers.landing-page-coach.entrypoints: websecure
+      traefik.http.routers.landing-page-coach.tls: "true"
+      traefik.http.routers.landing-page-coach.tls.certresolver: letsencrypt
+      traefik.http.routers.landing-page-coach.service: landing-page-coach
+      traefik.http.services.landing-page-coach.loadbalancer.server.port: "80"
+
+networks:
+  proxy:
+    external: true
+    name: proxy

@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!package.json
+!package-lock.json
+!.gitignore
+!.oxlintrc.json
+!index.html
+!vite.config.js
+!src/
+!src/**
+!public/
+!public/**
+!deploy/
+!deploy/nginx.conf
